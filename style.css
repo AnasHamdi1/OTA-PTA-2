@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+h1{
+    margin: 0px auto 50px;
+    text-align: center;
+    width: 600px;
+    letter-spacing: 0.3px;
+    font-size: 30px;
+    color: #362f4b;
+}
+table{
+    border-spacing: 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+table th{
+    text-transform: uppercase;
+    background-color: #362f4b;
+    color: white;
+}
+table td,
+table th{
+    padding: 20px 40px;
+}
+table tr.s{
+    background-color: #f6f6f6;
+}
+table tr:not(.s){
+    background-color: white;
+}
+table tr.s td{
+    /* color: #828282; */
+    color: black;
+}
+table td{
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    color: #362f4b;
+    font-weight: bold;
+    animation: a-link 1s infinite;
+}
+@keyframes a-link{
+    0%, 100%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 5px;
+    }
+}
+@media (max-width: 700px){
+    h1{
+        font-size: 22px;
+        width: fit-content;
+        padding: 0px;
+        margin-bottom: 31px;
+    }
+    table{
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    table td,
+    table th{
+        padding: 25px 10px;
+    }
+    body{
+        margin: 10px;
+    }
+}
+@media (max-width: 357px){
+    table{
+        font-size: 12px;
+        border-radius: 0px;
+        width: 100%;
+    }
+    table td,
+    table th{
+        padding: 25px 5px;
+    }
+    table th{
+        font-size: 100%;
+        border: 0.1px solid rgba(255, 255, 255, 0.112);
+    }
+    table td{
+        border: 0.1px solid #362f4b1a;
+    }
+    body{
+        margin: 0;
+    }
+}
